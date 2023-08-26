@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Xác nhận đơn hàng</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+	td{
+		height:100px;}
+	.dd{
+		color:#fff;
+		text-transform:bold;
+		font-size:19px;}
+	b{
+		color:#fff;
+		font-size:19px;}
+</style>
+<script>
+	function NhanThongTinTrangKhac()
+	{
+		
+		document.getElementById("NameNG").innerHTML = sessionStorage.getItem("NameNG");
+		document.getElementById("PhoneNG").innerHTML = sessionStorage.getItem("PhoneNG");
+		document.getElementById("AddNG").innerHTML = sessionStorage.getItem("AddNG");
+		document.getElementById("SLNG").innerHTML = sessionStorage.getItem("SLNG");
+	
+	}
+</script>
+
+</head>
+
+<body>
+    
+	<div style="border:#000 solid 5px; width:30%; margin:0 auto; border-radius:15px;background-color:#FFF; margin-top:75px;background:url(./Images/cloud.JPG);">
+  
+    	<table style="margin:0 auto; ">
+        	<tr >
+            	<td colspan="2"><h3 style="margin-center:0px;color:#fff"> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;XÁC NHẬN ĐƠN HÀNG<hr></h3></td>
+                
+            </tr>
+            
+            <tr>
+            	<td><b> Họ và tên:  </b></td>
+                <td id="NameNG" class="dd"> </td>
+            </tr>
+            
+            <tr>
+            	<td><b> Số điện thoại: </b></td>
+                <td id="PhoneNG" class="dd"> </td>
+            </tr>
+            <tr>
+            	<td><b>Địa chỉ: </b></td>
+                <td id="AddNG" class="dd"> </td>
+            </tr>
+            <tr>
+            	<td><b>Số lượng: </b></td>
+                <td id="SLNG" class="dd"> </td>
+            </tr>
+            
+            <tr>
+            	<td colspan="2"><h3 style="margin-center:0px;color:#fff"><hr>CẢM ƠN QUÝ KHÁCH ĐÃ MUA HÀNG<i class="material-icons">favorite</i></h3></td>
+            </tr>
+        </table>
+       
+    </div>
+    <script>
+	NhanThongTinTrangKhac();
+	</script>
+</body>
+</html>
