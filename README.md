@@ -1,4 +1,4 @@
-# [WINFORM] QUẢN LÝ CỬA HÀNG BÁN GIÀY 
+# QUẢN LÝ CỬA HÀNG BÁN GIÀY 
 # THÀNH VIÊN
 <ol>
   <li>Nguyễn Lê Hữu Thắng</li>
